@@ -1,5 +1,7 @@
 package griffith;
 
+
+
 import org.junit.jupiter.api.Test;
 
 public class FizzBuzzTest {
@@ -19,6 +21,9 @@ public class FizzBuzzTest {
 	}
 	
 	public String processNumber(int number) {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+		
+		assertThat(fizzBuzz.processNumber(1), is("1"));
 		
 		return "1";
 	}
